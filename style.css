@@ -1,0 +1,219 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff5f8;
+    color: #5d4050;
+}
+
+/* HEADER */
+header {
+    background: #f4c8d9;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    color: #a74470;
+    font-size: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #70445a;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #d44c89;
+}
+
+#menu-toggle {
+    display: none;
+    border: none;
+    background: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* HOME */
+.home {
+    min-height: 85vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 8%;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.home-content {
+    max-width: 500px;
+}
+
+.home-content h3 {
+    color: #c46c91;
+}
+
+.home-content h1 {
+    font-size: 48px;
+    color: #a74470;
+    margin: 15px 0;
+}
+
+.home-content p {
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: #d4779e;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #a74470;
+    transform: translateY(-3px);
+}
+
+/* FOTO */
+.profile-photo {
+    width: 260px;
+    height: 300px;
+    border-radius: 50% 50% 20px 20px;
+    background: #f4c8d9;
+    border: 7px solid white;
+    box-shadow: 0 5px 20px #e8b5cc;
+    overflow: hidden;
+}
+
+.profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* SECTION */
+section:not(.home) {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+.judul {
+    font-size: 35px;
+    color: #a74470;
+    margin-bottom: 15px;
+}
+
+.subjudul {
+    color: #c46c91;
+    margin-bottom: 25px;
+}
+
+/* CARD */
+.card {
+    max-width: 750px;
+    margin: 25px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px #eed3df;
+    line-height: 1.8;
+    text-align: left;
+}
+
+.card h3 {
+    color: #b6537d;
+    margin-bottom: 15px;
+}
+
+/* BIODATA */
+.biodata p {
+    padding: 8px 0;
+    border-bottom: 1px solid #f5dce7;
+}
+
+/* HOBI */
+.hobi-card {
+    max-width: 350px;
+    margin: 25px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px #eed3df;
+    line-height: 1.8;
+}
+
+.icon {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+/* FOOTER */
+footer {
+    background: #f4c8d9;
+    text-align: center;
+    padding: 25px;
+    color: #70445a;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    header {
+        padding: 18px 5%;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 65px;
+        left: 0;
+        width: 100%;
+        background: #f4c8d9;
+        padding: 20px;
+    }
+
+    nav.active {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    .home {
+        text-align: center;
+    }
+
+    .home-content h1 {
+        font-size: 36px;
+    }
+
+    .profile-photo {
+        width: 220px;
+        height: 260px;
+    }
+}
