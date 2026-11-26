@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio - Isma</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff5f8;
+    color: #5d4050;
+}
+
+/* NAVBAR */
+header {
+    background: #f4c8d9;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #a74470;
+}
+
+nav a {
+    text-decoration: none;
+    color: #70445a;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #d44c89;
+}
+
+/* HOME */
+.home {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 8%;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.home-content {
+    max-width: 500px;
+}
+
+.home-content h3 {
+    color: #c46c91;
+    font-size: 20px;
+}
+
+.home-content h1 {
+    font-size: 50px;
+    color: #a74470;
+    margin: 15px 0;
+}
+
+.home-content p {
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: #d4779e;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #a74470;
+}
+
+.profile-photo {
+    width: 260px;
+    height: 300px;
+    border-radius: 50% 50% 20px 20px;
+    background: #f4c8d9;
+    border: 7px solid white;
+    box-shadow: 0 5px 20px #e8b5cc;
+    overflow: hidden;
+}
+
+.profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* SECTION */
+section:not(.home) {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+.judul {
+    font-size: 35px;
+    color: #a74470;
+    margin-bottom: 15px;
+}
+
+.subjudul {
+    color: #c46c91;
+    margin-bottom: 25px;
+}
+
+.card {
+    max-width: 750px;
+    margin: 25px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px #eed3df;
+    line-height: 1.8;
+    text-align: left;
+}
+
+.card h3 {
+    color: #b6537d;
+    margin-bottom: 15px;
+}
+
+/* PROFIL */
+.data {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 15px;
+}
+
+.data strong {
+    color: #b6537d;
+}
+
+/* HOBI */
+.hobi-card {
+    max-width: 350px;
+    margin: 25px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px #eed3df;
+}
+
+.icon {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+/* FOOTER */
+footer {
+    background: #f4c8d9;
+    text-align: center;
+    padding: 25px;
+    color: #70445a;
+}
+
+/* RESPONSIVE */
+@media(max-width: 600px) {
+    header {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        margin: 5px;
+        display: inline-block;
+    }
+
+    .home {
+        text-align: center;
+    }
+
+    .home-content h1 {
+        font-size: 38px;
+    }
+
+    .data {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- MENU -->
+<header>
+    <div class="logo">Isma ♡</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#profil">Profil</a>
+        <a href="#hobi">Hobi</a>
+    </nav>
+</header>
+
+<!-- HALAMAN HOME -->
+<section class="home" id="home">
+
+    <div class="home-content">
+        <h3>Welcome To My Website</h3>
+        <h1>Hallo, I'm Isma!</h1>
+
+        <p>
+            Selamat datang di website pribadi saya.
+            Website ini berisi tentang perkenalan diri,
+            profil, dan hobi saya.
+        </p>
+
+        <a href="#tentang" class="btn">About Me</a>
+    </div>
+
+    <div class="profile-photo">
+        <img src="foto.jpg" alt="Foto Isma">
+    </div>
+
+</section>
+
+<!-- TENTANG SAYA -->
+<section id="tentang">
+
+    <h2 class="judul">About Me</h2>
+    <p class="subjudul">Tentang Saya 🌷</p>
+
+    <div class="card">
+        <h3>Perkenalan Diri</h3>
+
+        <p>
+            Halo! Perkenalkan nama saya Isma.
+            Saya adalah seorang pelajar yang sedang
+            menempuh pendidikan di SMK.
+            Saya senang mempelajari hal baru,
+            mendapatkan pengalaman, dan mengembangkan
+            kemampuan diri.
+        </p>
+    </div>
+
+</section>
+
+<!-- PROFIL -->
+<section id="profil">
+
+    <h2 class="judul">My Profile</h2>
+    <p class="subjudul">Biodata Diri ✨</p>
+
+    <div class="card">
+
+        <div class="data">
+            <strong>Nama</strong>
+            <span>Isma</span>
+
+            <strong>Tempat Lahir</strong>
+            <span>Purbalingga</span>
+
+            <strong>Tanggal Lahir</strong>
+            <span>29 Oktober</span>
+
+            <strong>Jenis Kelamin</strong>
+            <span>Perempuan</span>
+
+            <strong>Sekolah</strong>
+            <span>SMK Panca Bhakti Rakit</span>
+
+            <strong>Alamat</strong>
+            <span>Jawa Tengah, Indonesia</span>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- HOBI -->
+<section id="hobi">
+
+    <h2 class="judul">My Hobby</h2>
+    <p class="subjudul">Hal yang Saya Sukai 💗</p>
+
+    <div class="hobi-card">
+
+        <div class="icon">🎧</div>
+
+        <h3>Mendengarkan Musik</h3>
+
+        <p>
+            Saya suka mendengarkan musik
+            karena musik dapat membuat suasana hati
+            menjadi lebih menyenangkan.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Isma | My Personal Website ♡</p>
+</footer>
+
+</body>
+  </html>
